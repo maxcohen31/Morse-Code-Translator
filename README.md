@@ -1,2 +1,3 @@
 # Morse-Code-Translator
-Morse code translator 
+
+Morse code translator to have fun with
