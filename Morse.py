@@ -61,9 +61,9 @@ class Morse:
     def greetings(self):
         
         return  '''
-                "****************************"
+                ******************************
                     MORSE CODE CONVERTER    
-                "****************************"
+                ******************************
                 '''
         
     # From English to Morse code  
