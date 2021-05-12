@@ -57,7 +57,7 @@ class Morse:
                     "?": "..--..",
                     "/": "-..-."}
     
-    
+    # Method to welcome the player
     def greetings(self):
         
         return  '''
