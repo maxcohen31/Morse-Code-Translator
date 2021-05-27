@@ -67,23 +67,21 @@ class Morse:
         
     # From English to Morse code  
             
-    def english_morse_translator(self, words):
+    def english_morse_translator(self):
         
-        
-        if words == '':
-            return 'You have to provide some text'
-        
-        text = words.split()
-        result = ''
-        
-        for word in text:
-            character = []
-            for char in word:
-                if char.lower() in self.morse:
-                    character.append(self.morse[char.lower()])
-            result += ''.join(character)    
-            result += ''
-        return result.rstrip()        
+         words = input('Write the text to translate: ')
+        if len(words) == 0:
+            print('You have to provide some text')
+        text = words.split() # Split the input into an array
+        result = '' # This will be the translated text
+        for word in text: # Loop through the words in the array
+            character = []  
+            for char in word: # Loop through each characters of the words
+                if char.lower() in self.morse: # Check the characters to be in self.morse variable
+                    character.append(self.morse[char.lower()]) # Append the characters found
+            result += ''.join(character)         
+            result += '  '
+        print(result)  
 
     # From Morse code to English
             
