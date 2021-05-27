@@ -69,7 +69,7 @@ class Morse:
             
     def english_morse_translator(self):
         
-         words = input('Write the text to translate: ')
+        words = input('Write the text to translate: ')
         if len(words) == 0:
             print('You have to provide some text')
         text = words.split() # Split the input into an array
