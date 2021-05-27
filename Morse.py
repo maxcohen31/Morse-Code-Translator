@@ -3,7 +3,6 @@
 class Morse:
     
     def __init__(self):
-    
         self.morse = {
                     "a": ".-",     
                     "b": "-...",
