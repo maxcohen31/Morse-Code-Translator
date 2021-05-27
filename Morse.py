@@ -81,7 +81,7 @@ class Morse:
                     character.append(self.morse[char.lower()]) # Append the characters found
             result += ''.join(character)         
             result += '  '
-        print(result)  
+        return result  
 
     # From Morse code to English
             
