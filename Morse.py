@@ -59,16 +59,15 @@ class Morse:
     # Method to welcome the player
     def greetings(self):
         
-        return  '''
+        print('''
                 ******************************
                     MORSE CODE CONVERTER    
                 ******************************
-                '''
+                ''')
         
-    # From English to Morse code  
-            
+    # From English to Morse code       
     def english_morse_translator(self):
-        
+        self.greetings()
         words = input('Write the text to translate: ')
         if len(words) == 0:
             print('You have to provide some text')
