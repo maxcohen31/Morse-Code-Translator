@@ -85,21 +85,21 @@ class Morse:
 
     # From Morse code to English
             
-    def morse_english_translator(self, morse):
-        
-        if morse == '':
-            return 'Please, insert Morse code'
-        else:
-            text = ''
-            morse = morse.split()
-            
-            for morse_w in morse:
-                characters = morse_w.split()
-                for char in characters:
-                    for key, value in self.morse.items():
-                        if char == value:
-                            text += key
-                text += ''
-            return text.rstrip()          
+    def morse_to_eng(self):
+        self.greetings()
+        morse = input('Insert Morse code: ') 
+        if len(morse) == 0:
+            print('Please, insert Morse code')
+        else:    
+            final_message = '' # This will be the translated code
+            morse_code = morse.split() # Split rhe input into an array
+            for morse_w in morse_code:
+                characters = morse_w.split() # Splitting the characters variable
+                for char in characters: # Loop through the characters
+                    for key, value in self.morse.items(): # Looping through the self.morse dictionary
+                        if char == value: # char has to be equal to value
+                            final_message += key # Add keys to the final_message variable
+                final_message += ''
+            print(final_message)          
             
                 
